@@ -22,7 +22,7 @@ public class Originator {
     public Memo createMemo() {
         return new Memo(state);
     }
-
+    // 通过备忘录恢复自身状态
     public void restoreMemo(Memo memo) {
         setState(memo.getState());
     }
